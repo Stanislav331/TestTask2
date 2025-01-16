@@ -1,40 +1,37 @@
 import styled from "styled-components";
-import {Link} from "react-router-dom";
 
-
-export const Counter = styled.p`
-    width: 20px;
-    height: 20px;
-    background: red;
-    position: absolute;
-    top: -25px;
-    right: -10px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+export const MainWrapper = styled.div`
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
 `;
 
-export const GoToCartButton = styled(Link)`
-    padding: 20px;
-    background-color: #f0f0f0;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    border-radius: 20px;
-    transition: background-color 0.5s ease, color 0.5s ease;
+export const ProductImage = styled.img`
+    max-width: 100%;
+    max-height: 300px;
+    height:auto;
+    display: block;
+`;
 
-    &:hover {
-        background-color: #007bff;
-        svg{
-            path{
-                fill: #fff;
-                stroke: #fff;
-            }
-        }
-    }
-    }
+export const ArrowsWrapper = styled.div`
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    right: -35px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+`;
 
-    &:focus {
-        outline: none;
+export const ArrowButton = styled.button`
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    background: #ebebeb;
+    &:hover{
+        background: #d7d7d7;
+        transition: 0.2s;
     }
 `;
